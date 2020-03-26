@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 3</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="zad3.css">
+    <script src="zad3.js"></script>
+</head>
+<body>
+    
+    <div id="dialog-form" title="Create">
+        <p class="validateTips">All form fields are required.</p>
+    
+        <form>
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Anna" class="text ui-widget-content ui-corner-all">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" placeholder="Smith" class="text ui-widget-content ui-corner-all">
+                <label for="email">City</label>
+                <input type="text" name="city" id="city" placeholder="Warszawa" class="text ui-widget-content ui-corner-all">
+                <label for="zipcode">Zip code</label>
+                <input type="text" name="zipcode" id="zipcode" placeholder="01-376" class="text ui-widget-content ui-corner-all">
+                <label for="birth">Date of birth</label>
+                <input type="text" name="birth" id="birth" placeholder="03-04-1997" class="text ui-widget-content ui-corner-all">
+
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
+    
+    
+    <div id="users-contain" class="ui-widget">
+        <table id="users" class="ui-widget ui-widget-content">
+            <thead>
+                <tr class="ui-widget-header ">
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>City</th>
+                    <th>Zip code</th>
+                    <th>Date of birth</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="dialog-remove" title="Remove?">
+        <p>Do you want to delete this item?</p>
+    </div>
+    <button id="create-user">Create</button>    
+ 
+</body>
+</html>
